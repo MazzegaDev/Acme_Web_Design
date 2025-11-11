@@ -11,22 +11,20 @@
             <h1 class="text-center text-white text-4xl">Acme Web Design</h1>
         </header>
         <nav class="bg-zinc-400">
-            <ul class="flex p-4 justify-between">
-                <li>Historia da Acme</li>
-                <li>Nossos Produtos</li>
-                <li>Objetivos</li>
-                <li>Valores</li>
+            <ul class="flex p-4 justify-between flex-1 gap-2">
+                <li class="hover:scale-105 duration-300">Historia da Acme</li>
+                <li class="hover:scale-105 duration-300">Nossos Produtos</li>
+                <li class="hover:scale-105 duration-300">Objetivos</li>
+                <li class="hover:scale-105 duration-300">Valores</li>
             </ul>
         </nav>
-        <main class="bg-slate-200 p-2">
-            <div
-                class="lg:flex lg:gap-3.5 lg:w-1/2 lg:flex-1 lg:justify-self-center lg:items-center"
-            >
+        <main class="bg-slate-200 p-2 w-full min-h-screen mx-auto">
+            <div class="lg:flex lg:justify-between lg:gap-3 p-2.5 m-1.5">
                 <section
-                    class="bg-slate-500 p-2.5 mb-2.5 rounded-2xl"
+                    class="bg-slate-500 lg:w-screen lg:flex-1 p-2.5 mb-2.5 rounded-2xl"
                 >
                     <h2 class="text-center p-2">Nossa historia</h2>
-                    <article class="text-white p-1.5 text-justify">
+                    <article class="text-white p-1.5 text-center">
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Eveniet nobis fuga beatae consequuntur
@@ -37,9 +35,11 @@
                     </article>
                 </section>
 
-                <section class="bg-slate-300 mb-2.5 rounded-2xl">
+                <section
+                    class="bg-slate-300 lg:w-screen lg:flex-1 p-2.5 mb-2.5 rounded-2xl"
+                >
                     <h2 class="text-center p-2">Nossos Produtos</h2>
-                    <article class="text-slate-600 p-1.5 text-justify">
+                    <article class="text-slate-600 p-1.5 text-center">
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Nisi obcaecati adipisci iusto non iste eaque,
@@ -51,12 +51,12 @@
                 </section>
             </div>
 
-            <div
-                class="lg:flex lg:gap-3.5 lg:w-1/2 lg:flex-1 lg:justify-self-center lg:items-center"
-            >
-                <section class="bg-slate-500 p-2.5 mb-2.5 rounded-2xl">
+            <div class="lg:flex lg:justify-between lg:gap-3 p-2.5 m-1.5">
+                <section
+                    class="bg-slate-500 lg:w-screen lg:flex-1 p-2.5 mb-2.5 rounded-2xl"
+                >
                     <h2 class="text-center p-2">Objetivos</h2>
-                    <article class="text-white p-1.5 text-justify">
+                    <article class="text-white p-1.5 text-center">
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Voluptatem itaque exercitationem eveniet,
@@ -67,9 +67,11 @@
                     </article>
                 </section>
 
-                <section class="bg-slate-300 p-2.5 mb-2.5 rounded-2xl">
+                <section
+                    class="bg-slate-300 lg:w-full lg:flex-1 p-2.5 mb-2.5 rounded-2xl"
+                >
                     <h2 class="text-center p-2">Valores</h2>
-                    <article class="text-slate-600 p-1.5 text-justify">
+                    <article class="text-slate-600 p-1.5 text-center">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. In quo corporis hic cumque optio eum neque est
@@ -80,50 +82,86 @@
                 </section>
             </div>
 
-            <section>
-                <h2>Depoimentos de clientes</h2>
-                <article>
-                    <div>
-                        <h3>João</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolores voluptatibus animi nesciunt, totam
-                            aspernatur suscipit consequuntur odit velit
-                            quibusdam cum, iusto nulla cupiditate, aliquid
-                            facilis earum vero minus molestias enim.
-                        </p>
+            <section
+                class="bg-slate-300 flex flex-col lg:flex lg:flex-col lg:flex-1 p-2.5 mb-2.5 rounded-2xl"
+            >
+                <h2 class="text-center">Depoimentos de clientes</h2>
+                <div class="flex flex-col lg:flex lg:flex-row gap-4 m-2 p-2">
+                    <div class="bg-slate-600 rounded-2xl p-2.5">
+                        <h3 class="text-white p-1.5 text-center">João</h3>
+                        <article
+                            class="flex flex-col justify-center items-center"
+                        >
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Dolores voluptatibus animi
+                                nesciunt, totam aspernatur suscipit consequuntur
+                                odit velit quibusdam cum, iusto nulla
+                                cupiditate, aliquid facilis earum vero minus
+                                molestias enim.
+                            </p>
+                            <img
+                                src="public/img/user.png"
+                                alt="foto do usuario"
+                                class="w-16"
+                            />
+                        </article>
                     </div>
 
-                    <div>
-                        <h3>Joaquim</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolores voluptatibus animi nesciunt, totam
-                            aspernatur suscipit consequuntur odit velit
-                            quibusdam cum, iusto nulla cupiditate, aliquid
-                            facilis earum vero minus molestias enim.
-                        </p>
+                    <div class="bg-slate-600 rounded-2xl p-2.5">
+                        <h3 class="text-white p-1.5 text-center">Joaquim</h3>
+                        <article
+                            class="flex flex-col justify-center items-center"
+                        >
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Dolores voluptatibus animi
+                                nesciunt, totam aspernatur suscipit consequuntur
+                                odit velit quibusdam cum, iusto nulla
+                                cupiditate, aliquid facilis earum vero minus
+                                molestias enim.
+                            </p>
+                            <img
+                                src="public/img/user.png"
+                                alt="foto do usuario"
+                                class="w-16"
+                            />
+                        </article>
                     </div>
 
-                    <div>
-                        <h3>Fernanda</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolores voluptatibus animi nesciunt, totam
-                            aspernatur suscipit consequuntur odit velit
-                            quibusdam cum, iusto nulla cupiditate, aliquid
-                            facilis earum vero minus molestias enim.
-                        </p>
+                    <div class="bg-slate-600 rounded-2xl p-2.5">
+                        <h3 class="text-white p-1.5 text-center">Fernanda</h3>
+                        <article
+                            class="flex flex-col justify-center items-center"
+                        >
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Dolores voluptatibus animi
+                                nesciunt, totam aspernatur suscipit consequuntur
+                                odit velit quibusdam cum, iusto nulla
+                                cupiditate, aliquid facilis earum vero minus
+                                molestias enim.
+                            </p>
+                            <img
+                                src="public/img/user.png"
+                                alt="foto do usuario"
+                                class="w-16"
+                            />
+                        </article>
                     </div>
-                </article>
+                </div>
             </section>
-
-            <section>
-                <h2>Viu so? oque está esperando para entrar em contato</h2>
-                <ul>
-                    <li>Telefone <span>teste</span></li>
-                    <li><a href="">E-Mail</a></li>
-                </ul>
+            <!-- Mudar -->
+            <section class="flex flex-row justify-center p-2.5 items-center">
+                <div
+                    class="flex flex-col justify-center items-center bg-slate-600 rounded-2xl p-2.5"
+                >
+                    <h2>Viu so? oque está esperando para entrar em contato</h2>
+                    <ul>
+                        <li>Telefone <span>teste</span></li>
+                        <li><a href="">E-Mail</a></li>
+                    </ul>
+                </div>
             </section>
         </main>
 
